@@ -1,0 +1,44 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+{% load static %}
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Register </title>	
+		<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">		
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Register</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action=<a class="bottom" href="{{ url_for('signup') }}">signup</a> method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+          			<input id="First_Name" name="First_Name" type="text" placeholder="Enter Your first name" class="textbox"/></br></br>
+					<input id="Last_Name" name="Last_Name" type="text" placeholder="Enter Your last name" class="textbox"/></br></br>
+					<input id="Email" name="Email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+					<input id="Password" name="Password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+					
+					<!--<input id="Address" name="Address" type="text" placeholder="Enter Your address" class="textbox"/></br></br>
+					<input id="Phone_Number" name="Phone_Number" type="text" placeholder="Enter Your phone number" class="textbox"/></br></br>
+					<input id="Date_Of_Birth" name="Date_Of_Birth" type="text" placeholder="Enter your date of birth" class="textbox"/></br></br>
+					<input id="Job_Title" name="Job_Title" type="text" placeholder="Enter Your job title" class="textbox"/></br></br>
+					<input id="Manager_Name" name="Manager_Name" type="text" placeholder="Enter Your manager's name" class="textbox"/></br></br>
+					<input id="Department" name="Department" type="text" placeholder="Enter Your department" class="textbox"/></br></br>
+					<input id="Hire_Date" name="Hire_Date" type="text" placeholder="Enter Your hire date" class="textbox"/></br></br>
+					<input id="Current_Salary" name="Current_Salary" type="text" placeholder="Enter Your current salary" class="textbox"/></br></br>
+					<input id="Status" name="Status" type="text" placeholder="Enter Your status" class="textbox"/></br></br>
+					<input type="submit" class="btn" value="Sign Up"></br>-->
+				</form>
+			</h2>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
